@@ -6,6 +6,7 @@ The chatbot uses a [langchain](https://python.langchain.com/en/latest/index.html
 ### Setup developmnet environment (Ubuntu-22.04)
 I used this [Tutorial](https://www.youtube.com/watch?v=R88B_ldc6O8&t=384s).
 Open Ubuntu-22.04 via Remote Explorer for VS Code.
+Install Python & Pylance extension in WSL.
 ### Install repository
 ```
 git clone https://github.com/AnnaKohlbecker/Weather_ChatBot.git
@@ -29,7 +30,7 @@ conda activate chatbot_env
 conda deactivate
 ```
 ### Environment installations
-After activating the environment:
+After activating the environment, make sure that you are using the right python interpreter. Should be: ~/anaconda3/envs/chatbot_env/bin/python. (F1 -> Python: Select Interpreter)
 ```
 pip install -r requirements.txt
 ```
@@ -37,7 +38,7 @@ pip install -r requirements.txt
 ```
 cp .env-example .env
 ```
-Change `OPENAI_API_BASE` and `OPENAI_API_KEY` variables to the base and key given the OpenAI resource.
+Change `OPENAI_API_KEY` variable to the key given the by the OpenAI resource.
 See [OpenAI](https://platform.openai.com/api-keys).
 ### Run
 ```
